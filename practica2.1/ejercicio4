@@ -1,28 +1,28 @@
 [cursoredes@localhost ~]$ man uname
 
-[cursoredes@localhost ~]$ uname -a
+[cursoredes@localhost ~]$ uname -a //Toda la informacion
 Linux localhost.localdomain 3.10.0-862.11.6.el7.x86_64 #1 SMP Tue Aug 14 21:49:04 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
 
-[cursoredes@localhost ~]$ uname -s
+[cursoredes@localhost ~]$ uname -s //Kernel name
 Linux
 
-[cursoredes@localhost ~]$ uname -r
+[cursoredes@localhost ~]$ uname -r //Kernel release
 3.10.0-862.11.6.el7.x86_64
 
-[cursoredes@localhost ~]$ uname -v
+[cursoredes@localhost ~]$ uname -v //Kernel version
 #1 SMP Tue Aug 14 21:49:04 UTC 2018
 
-[cursoredes@localhost ~]$ uname -n
+[cursoredes@localhost ~]$ uname -n //Nodename
 localhost.localdomain
 
-[cursoredes@localhost ~]$ uname -m
+[cursoredes@localhost ~]$ uname -m //Machine
 x86_64
 
-[cursoredes@localhost ~]$ uname -p
+[cursoredes@localhost ~]$ uname -p //Processor
 x86_64
 
-[cursoredes@localhost ~]$ uname -i
+[cursoredes@localhost ~]$ uname -i //Hardware platform
 x86_64
 
-[cursoredes@localhost ~]$ uname -o
+[cursoredes@localhost ~]$ uname -o //Operating system
 GNU/Linux
