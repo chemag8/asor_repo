@@ -18,3 +18,4 @@ int main (){
     return 0;
 }
 
+//Del error(0) hasta el error(133), están definidos por el sistema. A partir del error(134) son errores desconocidos.
