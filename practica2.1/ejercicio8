@@ -1,0 +1,23 @@
+[cursoredes@localhost asor]$ id
+uid=1000(cursoredes) gid=1000(cursoredes) groups=1000(cursoredes),10(wheel),983(wireshark)
+
+[cursoredes@localhost asor]$ id -Z //Context
+id: --context (-Z) works only on an SELinux-enabled kernel
+
+[cursoredes@localhost asor]$ id -g //Group
+1000
+
+[cursoredes@localhost asor]$ id -G //Groups 
+1000 10 983
+
+[cursoredes@localhost asor]$ id -n //Name
+id: cannot print only names or real IDs in default format
+
+[cursoredes@localhost asor]$ id -r //Real
+id: cannot print only names or real IDs in default format
+
+[cursoredes@localhost asor]$ id -u //User
+1000
+
+[cursoredes@localhost asor]$ id -z //Zero
+id: option --zero not permitted in default format
