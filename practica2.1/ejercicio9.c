@@ -11,3 +11,6 @@ int main (){
 
     return 0;
 }
+
+//El setuid se utiliza para dar privilegios elevados en determinados archivos para usuarios que no lo poseen, como por ejemplo en el archivo /etc/bin/passwd. 
+//Por lo tanto, el bit setuid estará activo cuando el uid sea distinto a euid.
