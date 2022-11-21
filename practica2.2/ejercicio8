@@ -1,0 +1,15 @@
+stat
+Muestra el estado del archivo o del sistema de archivos.
+
+  -L , --desreferencia
+      sigue enlaces.
+  -Z , --contexto
+      imprime el contexto de seguridad de SELinux.
+  -f , --sistema de archivos
+      muestra el estado del sistema de archivos en lugar del estado del archivo.
+  -c --format = FORMAT
+      usa el FORMAT especificado en lugar del predeterminado; genera una nueva línea después de cada uso de FORMATO.
+  --printf = FORMATO
+      como --format , pero interpreta los escapes de barra invertida y no genera una nueva línea final obligatoria. Si desea una nueva línea, incluya \n en FORMAT.
+  -t , --conciso
+      imprime la información en forma concisa.
