@@ -12,5 +12,5 @@ int main(){
   return 1;
 }
 
-[cursoredes@localhost prueba]$ ls -ld test.txt 
--rw-r--r-x 1 cursoredes cursoredes 0 Nov 21 09:29 test.txt
+//[cursoredes@localhost prueba]$ ls -ld test.txt 
+//-rw-r--r-x 1 cursoredes cursoredes 0 Nov 21 09:29 test.txt
