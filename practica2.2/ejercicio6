@@ -1,0 +1,7 @@
+[cursoredes@localhost prueba]$ umask 027
+[cursoredes@localhost prueba]$ mkdir foo
+[cursoredes@localhost prueba]$ touch bar
+[cursoredes@localhost prueba]$ ls -ld bar
+-rw-r----- 1 cursoredes cursoredes 0 Nov 21 09:36 bar
+[cursoredes@localhost prueba]$ ls -ld foo
+drwxr-x--- 2 cursoredes cursoredes 6 Nov 21 09:36 foo
