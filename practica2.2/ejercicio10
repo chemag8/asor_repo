@@ -1,0 +1,36 @@
+[cursoredes@localhost prueba]$ ls -li
+total 32
+ 3125643 -rw-r----- 1 cursoredes cursoredes    0 Nov 21 09:36 bar
+ 3576991 lrwxrwxrwx 1 cursoredes cursoredes    3 Nov 21 10:15 bar2 -> bar
+ 3125640 -rwxr-x--- 1 cursoredes cursoredes 8496 Nov 21 09:45 ejercicio5
+   30830 -rw-rw-r-- 1 cursoredes cursoredes  248 Nov 21 09:44 ejercicio5.c
+ 3523184 -rwxr-x--- 1 cursoredes cursoredes 8776 Nov 21 10:10 ejercicio9
+ 3508944 -rw-r----- 1 cursoredes cursoredes  906 Nov 21 10:10 ejercicio9.c
+17153291 drwxr-x--- 2 cursoredes cursoredes    6 Nov 21 09:36 foo
+ 3576992 lrwxrwxrwx 1 cursoredes cursoredes    3 Nov 21 10:15 foo2 -> foo
+   30820 -rw-r----- 1 cursoredes cursoredes    0 Nov 21 09:45 test.txt
+
+[cursoredes@localhost prueba]$ ln bar bar3
+[cursoredes@localhost prueba]$ ln foo foo3
+ln: ‘foo’: hard link not allowed for directory
+
+[cursoredes@localhost prueba]$ ls -li
+total 32
+ 3125643 -rw-r----- 2 cursoredes cursoredes    0 Nov 21 09:36 bar
+ 3576991 lrwxrwxrwx 1 cursoredes cursoredes    3 Nov 21 10:15 bar2 -> bar
+ 3125643 -rw-r----- 2 cursoredes cursoredes    0 Nov 21 09:36 bar3
+ 3125640 -rwxr-x--- 1 cursoredes cursoredes 8496 Nov 21 09:45 ejercicio5
+   30830 -rw-rw-r-- 1 cursoredes cursoredes  248 Nov 21 09:44 ejercicio5.c
+ 3523184 -rwxr-x--- 1 cursoredes cursoredes 8776 Nov 21 10:10 ejercicio9
+ 3508944 -rw-r----- 1 cursoredes cursoredes  906 Nov 21 10:10 ejercicio9.c
+17153291 drwxr-x--- 2 cursoredes cursoredes    6 Nov 21 09:36 foo
+ 3576992 lrwxrwxrwx 1 cursoredes cursoredes    3 Nov 21 10:15 foo2 -> foo
+   30820 -rw-r----- 1 cursoredes cursoredes    0 Nov 21 09:45 test.txt
+
+
+[cursoredes@localhost prueba]$ ln -s hola holas
+[cursoredes@localhost prueba]$ ln  hola holad
+[cursoredes@localhost prueba]$ rm hola
+
+//Si se borran primeros los enlaces duros o simbólicos no pasa nada.
+//Si se borra primero el fichero original, solo se corrompe el enlace simbólico (no aparece el contenido).
