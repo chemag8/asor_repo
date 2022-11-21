@@ -1,0 +1,6 @@
+[cursoredes@localhost Documents]$ mkdir prueba
+[cursoredes@localhost Documents]$ chmod -x prueba/
+[cursoredes@localhost Documents]$ cd prueba/
+bash: cd: prueba/: Permission denied
+
+Al no tener permiso de ejecución, no se puede acceder al directorio.
