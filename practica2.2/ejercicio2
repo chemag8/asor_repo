@@ -1,0 +1,14 @@
+[cursoredes@localhost ~]$ ls -ld
+drwx------. 19 cursoredes cursoredes 4096 Nov 21 09:03 
+
+  - Tipo: directorio.   Usuario: rwx    Grupo: ---    Resto: ---
+
+[cursoredes@localhost ~]$ ls -ld Documents/asor
+drwxrwxr-x 2 cursoredes cursoredes 198 Nov  7 10:39 Documents/asor
+
+  - Tipo: directorio.   Usuario: rwx    Grupo: rwx    Resto: r-x
+
+[cursoredes@localhost ~]$ ls -ld Pictures
+drwxr-xr-x 2 cursoredes cursoredes 147 Sep 22  2018 Pictures
+
+  - Tipo: directorio.   Usuario: rwx    Grupo: r-x    Resto: r-x
