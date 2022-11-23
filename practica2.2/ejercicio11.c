@@ -24,7 +24,6 @@ int main(int argc, char *argv[]) {
 		return -1;
 	}
 
-	mode_t mode = buff.st_mode;
     switch (buff.st_mode & S_IFMT){
 
         case S_IFREG: 
@@ -39,11 +38,15 @@ int main(int argc, char *argv[]) {
 	        hard = strcat(hard, ".hard");
 	        sym = strcat(sym, ".sym");
 
-	        printf("HARD: %s\n", hard);
-	        printf("SYM: %s\n", sym);
+		if (link(argv[1],hard) == -1) {
+			printf("ERROR: No se ha podido crear el enlace duro.\n");
+		} else printf("Se ha creado enlace duro.\n");
+
+		if (symlink(argv[1],sym) == -1) {
+			printf("ERROR: No se ha podido crear el enlace simbólico.\n");
+		} else printf("Se ha creado enlace simbólico.\n");
 
             break;
-
         default:
             printf("ERROR: La ruta introducida no es un archivo ordinario.\n");
 
