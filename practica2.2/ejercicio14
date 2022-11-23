@@ -10,3 +10,12 @@
 9: FLOCK  ADVISORY  WRITE 1024 00:13:20007 0 EOF
 10: POSIX  ADVISORY  WRITE 752 00:13:17239 0 EOF
 12: POSIX  ADVISORY  WRITE 481 00:13:12661 0 EOF
+
+Identificador de bloqueo
+Tipo de bloque posix si el bloqueo fue realizado con fcntl y flock si fue con flock
+Modo de bloqueo, advisory(acceso a los datos está permitido evitando otros bloqueos) o mandatory(el acceso a los datos está denegado mientras esté bloqueado)
+Tipo de bloqueo, write (el proceso está escribiendo por lo tanto no se puede leer ni escribir en el área bloqueada) y  read (el proceso está leyendo por lo que el área no puede ser modificada)
+Pid del proceso que tiene el bloque sobre el fichero
+El formato que identifica el fichero major:minor:inode
+Byte donde comienza el bloqueo en el fichero
+Byte donde acaba el bloqueo del fichero
