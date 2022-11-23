@@ -9,7 +9,7 @@ int main(){
 
   int df = open("/home/cursoredes/Documents/prueba/test.txt", O_CREAT, 0645);
 
-  return 1;
+  return 0;
 }
 
 //[cursoredes@localhost prueba]$ ls -ld test.txt 
