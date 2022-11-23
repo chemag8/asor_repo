@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
 
 
 	if (argc < 2) {
-		 printf("ERROR: Se debe especeficar la ruta del archivo en los parámetros del programa.\n");
+		 printf("ERROR: Falta la ruta del archivo.\n");
 		 return -1;
 	}
 
