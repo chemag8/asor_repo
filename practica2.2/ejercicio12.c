@@ -26,5 +26,5 @@ int main(int argc, char *argv[]) {
 
   dup2(fd2, fd);
 
-  return 1;
+  return ;
 }
