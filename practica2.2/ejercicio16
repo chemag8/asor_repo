@@ -1,0 +1,15 @@
+lock - Administrar bloqueos desde scripts de shell
+
+-s,--shared
+Obtenga un bloqueo compartido, a veces denominado bloqueo de lectura.
+-x,-e,--exclusive
+Obtenga un bloqueo exclusivo, a veces llamado bloqueo de escritura.
+-u,--unlock
+Suelta un candado. 
+-n,--nb,--nonblock
+Falle (con un código de salida de 1) en lugar de esperar si el bloqueo no se puede adquirir inmediatamente.
+-w,--wait,--timeout seconds
+Falla (con un código de salida de 1) si el bloqueo no se puede adquirir ensegundos.
+-o,--close
+Cierre el descriptor de archivo en el que se mantiene el bloqueo antes de ejecutar elcomando.
+Pase un solocomando al shell with-c.
