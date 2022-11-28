@@ -1,0 +1,210 @@
+[cursoredes@localhost ~]$ ps -u $USER -f
+UID        PID  PPID  C STIME TTY          TIME CMD
+cursore+  1356  1351  0 08:58 ?        00:00:00 /usr/bin/openbox --startup /usr/
+cursore+  1365     1  0 08:58 ?        00:00:00 dbus-launch --sh-syntax --exit-w
+cursore+  1366     1  0 08:58 ?        00:00:00 /usr/bin/dbus-daemon --fork --pr
+cursore+  1434     1  0 08:58 ?        00:00:00 /usr/libexec/imsettings-daemon
+cursore+  1438     1  0 08:58 ?        00:00:00 /usr/libexec/gvfsd
+cursore+  1443     1  0 08:58 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/use
+cursore+  1533     1  0 08:58 ?        00:00:00 /usr/bin/VBoxClient --clipboard
+cursore+  1535  1533  0 08:58 ?        00:00:00 /usr/bin/VBoxClient --clipboard
+cursore+  1544     1  0 08:58 ?        00:00:00 /usr/bin/VBoxClient --display
+cursore+  1545  1544  0 08:58 ?        00:00:00 /usr/bin/VBoxClient --display
+cursore+  1549     1  0 08:58 ?        00:00:00 /usr/bin/VBoxClient --seamless
+cursore+  1554  1549  0 08:58 ?        00:00:00 /usr/bin/VBoxClient --seamless
+cursore+  1555     1  0 08:58 ?        00:00:00 /usr/bin/VBoxClient --draganddro
+cursore+  1557  1555  0 08:58 ?        00:00:04 /usr/bin/VBoxClient --draganddro
+cursore+  1567  1356  0 08:58 ?        00:00:00 /usr/bin/ssh-agent /bin/sh -c ex
+cursore+  1590     1  0 08:58 ?        00:00:00 tint2
+cursore+  1592     1  0 08:58 ?        00:00:00 /usr/bin/python /usr/share/syste
+cursore+  1593     1  0 08:58 ?        00:00:00 nm-applet
+cursore+  1595     1  0 08:58 ?        00:00:00 abrt-applet
+cursore+  1630     1  0 08:58 ?        00:00:00 /usr/libexec/at-spi-bus-launcher
+cursore+  1634     1  0 08:58 ?        00:00:00 /usr/bin/pulseaudio --start --lo
+cursore+  1650  1630  0 08:58 ?        00:00:00 /bin/dbus-daemon --config-file=/
+cursore+  1660     1  0 08:58 ?        00:00:00 /usr/libexec/at-spi2-registryd -
+cursore+  1719     1  0 08:58 ?        00:00:00 /usr/libexec/dconf-service
+cursore+  1754  1590  1 09:00 ?        00:00:44 /usr/share/code/code --unity-lau
+cursore+  1756  1754  0 09:00 ?        00:00:00 /usr/share/code/code --type=zygo
+cursore+  1799  1756  2 09:00 ?        00:01:21 /usr/share/code/code --type=rend
+cursore+  1842  1799  0 09:00 pts/0    00:00:00 /bin/bash
+cursore+  1862  1799  0 09:00 ?        00:00:02 /usr/share/code/code /usr/share/
+cursore+  1865  1799  0 09:00 ?        00:00:00 /usr/share/code/code /usr/share/
+cursore+  1884  1756  0 09:00 ?        00:00:01 /usr/share/code/code --type=rend
+cursore+  2043     1  0 09:06 ?        00:00:03 /usr/libexec/gnome-terminal-serv
+cursore+  2048     1  0 09:06 ?        00:00:00 /usr/libexec/xdg-desktop-portal
+cursore+  2053     1  0 09:06 ?        00:00:00 /usr/libexec/xdg-document-portal
+cursore+  2057     1  0 09:06 ?        00:00:00 /usr/libexec/xdg-permission-stor
+cursore+  2069     1  0 09:06 ?        00:00:00 /usr/libexec/xdg-desktop-portal-
+cursore+  2076  2043  0 09:06 ?        00:00:00 gnome-pty-helper
+cursore+  2077  2043  0 09:06 pts/1    00:00:00 bash
+cursore+  2149  2043  0 09:06 pts/2    00:00:00 bash
+cursore+  2222  2043  0 09:07 pts/3    00:00:00 bash
+cursore+  3028  2077  0 09:46 pts/1    00:00:00 man ps
+cursore+  3039  3028  0 09:46 pts/1    00:00:00 less -s
+cursore+  3078  2149  0 09:49 pts/2    00:00:00 ps -u cursoredes -f
+
+-------------------------------------------------------------------------------------------------------
+
+
+[cursoredes@localhost ~]$ ps -eo pid,gid,sid,s,command
+  PID   GID   SID S COMMAND
+    1     0     1 S /usr/lib/systemd/systemd --switched-root --system --deserial
+    2     0     0 S [kthreadd]
+    3     0     0 S [ksoftirqd/0]
+    5     0     0 S [kworker/0:0H]
+    7     0     0 S [migration/0]
+    8     0     0 S [rcu_bh]
+    9     0     0 R [rcu_sched]
+   10     0     0 S [lru-add-drain]
+   11     0     0 S [watchdog/0]
+   13     0     0 S [kdevtmpfs]
+   14     0     0 S [netns]
+   15     0     0 S [khungtaskd]
+   16     0     0 S [writeback]
+   17     0     0 S [kintegrityd]
+   18     0     0 S [bioset]
+   19     0     0 S [bioset]
+   20     0     0 S [bioset]
+   21     0     0 S [kblockd]
+   22     0     0 S [md]
+   23     0     0 S [edac-poller]
+   29     0     0 S [kswapd0]
+   30     0     0 S [ksmd]
+   31     0     0 S [khugepaged]
+   32     0     0 S [crypto]
+   40     0     0 S [kthrotld]
+   42     0     0 S [kmpath_rdacd]
+   43     0     0 S [kaluad]
+   44     0     0 S [kpsmoused]
+   45     0     0 S [ipv6_addrconf]
+   59     0     0 S [deferwq]
+   90     0     0 S [kauditd]
+  100     0     0 S [kworker/u2:2]
+  272     0     0 S [ata_sff]
+  278     0     0 S [scsi_eh_0]
+  280     0     0 S [scsi_tmf_0]
+  281     0     0 S [scsi_eh_1]
+  282     0     0 S [scsi_tmf_1]
+  283     0     0 S [kworker/u2:3]
+  284     0     0 S [scsi_eh_2]
+  285     0     0 S [scsi_tmf_2]
+  305     0     0 S [kworker/0:1H]
+  355     0     0 S [kdmflush]
+  356     0     0 S [bioset]
+  366     0     0 S [kdmflush]
+  367     0     0 S [bioset]
+  380     0     0 S [bioset]
+  381     0     0 S [xfsalloc]
+  382     0     0 S [xfs_mru_cache]
+  383     0     0 S [xfs-buf/dm-0]
+  384     0     0 S [xfs-data/dm-0]
+  385     0     0 S [xfs-conv/dm-0]
+  386     0     0 S [xfs-cil/dm-0]
+  387     0     0 S [xfs-reclaim/dm-]
+  388     0     0 S [xfs-log/dm-0]
+  389     0     0 S [xfs-eofblocks/d]
+  390     0     0 S [xfsaild/dm-0]
+  462     0   462 S /usr/lib/systemd/systemd-journald
+  485     0   485 S /usr/sbin/lvmetad -f
+  489     0   489 S /usr/lib/systemd/systemd-udevd
+  601     0     0 S [iprt-VBoxWQueue]
+  634     0     0 S [xfs-buf/sda1]
+  635     0     0 S [xfs-data/sda1]
+  638     0     0 S [xfs-conv/sda1]
+  641     0     0 S [xfs-cil/sda1]
+  642     0     0 S [xfs-reclaim/sda]
+  645     0     0 S [xfs-log/sda1]
+  647     0     0 S [xfs-eofblocks/s]
+  649     0     0 S [xfsaild/sda1]
+  689     0     0 S [ttm_swap]
+  721     0   721 S /sbin/auditd
+  723     0   723 S /sbin/audispd
+  725     0   723 S /usr/sbin/sedispatch
+  728     0     0 S [rpciod]
+  729     0     0 S [xprtiod]
+  750     0   750 S /usr/sbin/alsactl -s -n 19 -c -E ALSA_CONFIG_PATH=/etc/alsa/
+  751     0   751 S /usr/sbin/abrtd -d -s
+  753     0   753 S /usr/bin/abrt-watch-log -F Backtrace /var/log/Xorg.0.log -- 
+  754   998   754 S /usr/lib/polkit-1/polkitd --no-debug
+  755     0   755 S /usr/lib/systemd/systemd-logind
+  757     0   757 S /usr/sbin/smartd -n -q never
+  758    81   758 S /usr/bin/dbus-daemon --system --address=systemd: --nofork --
+  761    32   761 S /sbin/rpcbind -w
+  768     0   768 S /usr/bin/abrt-watch-log -F BUG: WARNING: at WARNING: CPU: IN
+  782     0   782 S /sbin/rngd -f
+  787     0   787 S /usr/sbin/ModemManager
+  794     0   794 S /usr/libexec/udisks2/udisksd
+  795     0   795 S /usr/libexec/accounts-daemon
+  799   993   799 S /usr/bin/lsmd -d
+  805   172   805 S /usr/libexec/rtkit-daemon
+  820   991   818 S /usr/sbin/chronyd
+  826     0   826 S /usr/sbin/gssproxy -D
+  828     0   828 S /usr/sbin/mcelog --ignorenodev --daemon --syslog
+  870     0   864 S /bin/bash /usr/sbin/ksmtuned
+ 1008     0  1008 S /usr/sbin/rsyslogd -n
+ 1011     0  1011 S /usr/sbin/cupsd -f
+ 1013     0  1013 S /usr/sbin/sshd -D
+ 1014     0  1014 S /usr/bin/python -Es /usr/sbin/tuned -l -P
+ 1024     0  1024 S /usr/sbin/atd -f
+ 1025     0  1025 S /usr/sbin/crond -n
+ 1291     0  1291 S /usr/libexec/postfix/master -w
+ 1294    89  1291 S pickup -l -t unix -u
+ 1295    89  1291 S qmgr -l -t unix -u
+ 1311     0  1311 S /usr/sbin/gdm
+ 1328     0  1326 S /usr/sbin/VBoxService --pidfile /var/run/vboxadd-service.sh
+ 1333     0  1333 S /usr/bin/X :0 -background none -noreset -audit 4 -verbose -a
+ 1351  1000  1311 S gdm-session-worker [pam/gdm-autologin]
+ 1356  1000  1356 S /usr/bin/openbox --startup /usr/libexec/openbox-autostart OP
+ 1365  1000  1356 S dbus-launch --sh-syntax --exit-with-session
+ 1366  1000  1366 S /usr/bin/dbus-daemon --fork --print-pid 5 --print-address 7 
+ 1434  1000  1366 S /usr/libexec/imsettings-daemon
+ 1438  1000  1366 S /usr/libexec/gvfsd
+ 1443  1000  1366 S /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+ 1533  1000  1531 S /usr/bin/VBoxClient --clipboard
+ 1535  1000  1531 S /usr/bin/VBoxClient --clipboard
+ 1544  1000  1541 S /usr/bin/VBoxClient --display
+ 1545  1000  1541 S /usr/bin/VBoxClient --display
+ 1549  1000  1546 S /usr/bin/VBoxClient --seamless
+ 1554  1000  1546 S /usr/bin/VBoxClient --seamless
+ 1555  1000  1551 S /usr/bin/VBoxClient --draganddrop
+ 1557  1000  1551 S /usr/bin/VBoxClient --draganddrop
+ 1567  1000  1567 S /usr/bin/ssh-agent /bin/sh -c exec -l /bin/bash -c "/usr/bin
+ 1590  1000  1356 S tint2
+ 1592  1000  1356 S /usr/bin/python /usr/share/system-config-printer/applet.py
+ 1593  1000  1356 S nm-applet
+ 1595  1000  1356 S abrt-applet
+ 1630  1000  1366 S /usr/libexec/at-spi-bus-launcher
+ 1634  1000  1629 S /usr/bin/pulseaudio --start --log-target=syslog
+ 1650  1000  1366 S /bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/a
+ 1660  1000  1366 S /usr/libexec/at-spi2-registryd --use-gnome-session
+ 1719  1000  1366 S /usr/libexec/dconf-service
+ 1754  1000  1754 S /usr/share/code/code --unity-launch
+ 1756  1000  1754 S /usr/share/code/code --type=zygote --no-sandbox
+ 1799  1000  1754 S /usr/share/code/code --type=renderer --js-flags=--nolazy --d
+ 1842  1000  1842 S /bin/bash
+ 1862  1000  1754 S /usr/share/code/code /usr/share/code/resources/app/out/boots
+ 1865  1000  1754 S /usr/share/code/code /usr/share/code/resources/app/out/boots
+ 1884  1000  1754 S /usr/share/code/code --type=renderer --js-flags=--nolazy --d
+ 2043  1000  1366 S /usr/libexec/gnome-terminal-server
+ 2048  1000  1366 S /usr/libexec/xdg-desktop-portal
+ 2053  1000  1366 S /usr/libexec/xdg-document-portal
+ 2057  1000  1366 S /usr/libexec/xdg-permission-store
+ 2069  1000  1366 S /usr/libexec/xdg-desktop-portal-gtk
+ 2076    22  1366 S gnome-pty-helper
+ 2077  1000  2077 S bash
+ 2149  1000  2149 S bash
+ 2222  1000  2222 S bash
+ 2960     0     0 S [kworker/0:0]
+ 2995     0     0 S [kworker/0:1]
+ 3028  1000  2077 S man ps
+ 3039  1000  2077 S less -s
+ 3110     0     0 R [kworker/0:2]
+ 3118     0   864 S sleep 60
+ 3119  1000  2149 R ps -eo pid,gid,sid,s,command
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+Comparten el GID 1000.
+Los nuevos procesos también llevan el GID 1000.
