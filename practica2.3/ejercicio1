@@ -1,0 +1,5 @@
+chrt: Sirve para consultar la planificación y la prioridad de un proceso.
+nice y renice: Sirve para modificar la prioridad (modificar el valor nice de un proceso).
+
+$sudo nice -n-10 /bin/sh
+$sudo chrt -f -p 12 2222
