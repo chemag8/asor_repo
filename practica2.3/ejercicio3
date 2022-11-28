@@ -1,0 +1,6 @@
+$sudo nice -n-10 /bin/sh
+$sudo chrt -f -p 12 2881
+
+./p 2881
+SCHEDULER: FIFO
+Prioridad: 12 MAX: 99 MIN: 1
