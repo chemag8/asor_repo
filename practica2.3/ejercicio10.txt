@@ -1,0 +1,28 @@
+Terminal 1:
+[cursoredes@localhost ~]$ echo $$
+12131
+[cursoredes@localhost ~]$sleep 600
+Terminal 2
+[cursoredes@localhost ~]$kill -s SIGHUP 12131
+
+Se cierra el terminal 1 
+
+Terminal 1:
+[cursoredes@localhost ~]$ echo $$
+12714
+[cursoredes@localhost ~]$sleep 600
+Terminal 2
+[cursoredes@localhost ~]$kill -s SIGHUP 12714
+
+Cerró también el terminal 1
+
+
+Terminal 1:
+[cursoredes@localhost ~]$ echo $$
+13009
+[cursoredes@localhost ~]$sleep 600
+Terminal 2
+[cursoredes@localhost ~]$kill -s SIGQUIT 13009
+
+
+Detuvo el sleep sin cerrar el terminal
