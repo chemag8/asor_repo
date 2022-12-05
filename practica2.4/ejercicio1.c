@@ -28,16 +28,14 @@ int main(int argc, char** argv){
       return 1;
       break;
     case 0:
-    //Hijo
-      dup2(fd[PIPE_R],0); //Cambiamos el descriptor a la entrada.
+      dup2(fd[PIPE_R],0); 
       close(fd[PIPE_W]);
       close(fd[PIPE_R]);
       char *newargv[] = {argv[3],argv[4],NULL};
       execvp(newargv[0],newargv);
     break;
     default:
-    //Padre
-      dup2(fd[PIPE_W],1); //Cambiamos el descriptor a la entrada.
+      dup2(fd[PIPE_W],1);
       close(fd[PIPE_W]);
       close(fd[PIPE_R]);
       char *newargv2[] = {argv[1],argv[2],NULL};
