@@ -1,0 +1,21 @@
+[cursoredes@localhost ~]$ mkfifo tub_name
+[cursoredes@localhost ~]$ ls
+Desktop    Downloads  Pictures  Templates  Videos
+Documents  Music      Public    tub_name
+[cursoredes@localhost ~]$ stat tub_name 
+  File: ‘tub_name’
+  Size: 0         	Blocks: 0          IO Block: 4096   fifo
+Device: fd00h/64768d	Inode: 53012638    Links: 1
+Access: (0664/prw-rw-r--)  Uid: ( 1000/cursoredes)   Gid: ( 1000/cursoredes)
+Access: 2022-12-05 10:21:03.476460960 +0100
+Modify: 2022-12-05 10:21:03.476460960 +0100
+Change: 2022-12-05 10:21:03.476460960 +0100
+ Birth: -
+ 
+Teminal 1: [cursoredes@localhost ~]$ echo "Hola" > tub_name 
+Teminal 2: [cursoredes@localhost ~]$ cat tub_name 
+Hola
+Teminal 2: [cursoredes@localhost ~]$ echo "Adios" > tub_name
+Teminal 1: [cursoredes@localhost ~]$ cat tub_name 
+Adios
+
