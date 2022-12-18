@@ -52,7 +52,7 @@ int main(int argc, char**argv){
       c = recv(cli_sd, buf, 80, 0);
       buf[c] = '\0';
 
-      if (c <= 0) {
+      if ((buf[0] == 'Q') || c <= 0) {
         printf("Conexión terminada\n");
         close(cli_sd);
         return 0;
